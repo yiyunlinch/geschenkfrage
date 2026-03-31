@@ -38,6 +38,10 @@ async function addQuestion() {
       <button type="submit" class="create__button">Hinzufügen</button>
     </form>
 
+    <NuxtLink to="/questions" class="create__discover">
+      Random Fragen entdecken →
+    </NuxtLink>
+
     <div v-if="myQuestions.length > 0" class="create__list">
       <h3 class="create__list-title">Deine Fragen:</h3>
       <ul>
@@ -109,5 +113,13 @@ async function addQuestion() {
 .create__item {
   padding: 0.5rem 0;
   border-bottom: 1px solid #333;
+}
+.create__discover {
+  display: block;
+  text-align: center;
+  margin: 2rem auto;
+  color: #e94560;
+  text-decoration: none;
+  font-size: 1.1rem;
 }
 </style>

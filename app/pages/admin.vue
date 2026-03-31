@@ -101,12 +101,13 @@ onMounted(loadQuestions)
 
 .admin__row {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 0.5rem;
 }
 
 .admin__text {
-  flex: 1;
+  width: 100%;
 }
 
 .admin__source {
@@ -116,6 +117,7 @@ onMounted(loadQuestions)
 
 .admin__edit {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
 }
 

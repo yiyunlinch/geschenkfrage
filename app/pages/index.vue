@@ -21,7 +21,7 @@ onMounted(async () => {
     <p class="home__subtitle">Lerne dein Gegenüber kennen</p>
 
     <NuxtLink to="/questions" class="home__button home__button--primary">
-      Fragen entdecken
+      Random Fragen entdecken
     </NuxtLink>
 
     <NuxtLink to="/create" class="home__button home__button--secondary">
