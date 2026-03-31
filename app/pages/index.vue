@@ -5,8 +5,7 @@ const qrUrl = ref('')
 const appUrl = ref('')
 
 onMounted(async () => {
-  const { ip } = await $fetch('/api/ip')
-  appUrl.value = `http://${ip}:3000`
+  appUrl.value = window.location.origin
   qrUrl.value = await QRCode.toDataURL(appUrl.value, { width: 200, margin: 1 })
 })
 </script>
