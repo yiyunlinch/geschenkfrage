@@ -84,7 +84,7 @@ function onTouchEnd(e) {
 }
 
 .questions__back {
-  color: #888;
+  color: #e94560;
   text-decoration: none;
   padding: 1rem;
   font-size: 1.4rem;
@@ -95,7 +95,7 @@ function onTouchEnd(e) {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #888;
+  color: #e94560;
   font-size: 1.2rem;
 }
 

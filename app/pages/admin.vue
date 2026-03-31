@@ -71,7 +71,7 @@ onMounted(loadQuestions)
 }
 
 .admin__back {
-  color: #888;
+  color: #e94560;
   text-decoration: none;
   font-size: 1.4rem;
 }
@@ -83,7 +83,7 @@ onMounted(loadQuestions)
 
 .admin__count {
   text-align: center;
-  color: #888;
+  color: #e94560;
   margin-bottom: 2rem;
 }
 

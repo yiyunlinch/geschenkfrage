@@ -63,7 +63,7 @@ async function addQuestion() {
 }
 
 .create__back {
-  color: #888;
+  color: #e94560;
   text-decoration: none;
   font-size: 1.4rem;
 }
