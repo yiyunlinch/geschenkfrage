@@ -2,6 +2,7 @@
 const currentIndex = ref(0)
 const myId = useState('userId', () => '')
 const allQuestions = ref([])
+const loading = ref(true)
 
 onMounted(async () => {
   if (!myId.value) {
@@ -20,6 +21,7 @@ onMounted(async () => {
   }
 
   allQuestions.value = [...myQuestions, ...otherQuestions]
+  loading.value = false
 })
 
 // Swipe support
@@ -43,7 +45,11 @@ function onTouchEnd(e) {
   <div class="questions" @touchstart="onTouchStart" @touchend="onTouchEnd">
     <NuxtLink to="/" class="questions__back">← Zurück</NuxtLink>
 
-    <div v-if="allQuestions.length === 0" class="questions__empty">
+    <div v-if="loading" class="questions__empty">
+      <p>Laden...</p>
+    </div>
+
+    <div v-else-if="allQuestions.length === 0" class="questions__empty">
       <p>Keine Fragen vorhanden.</p>
     </div>
 
