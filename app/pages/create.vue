@@ -75,9 +75,18 @@ async function addQuestion() {
 
 .create__form {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
   max-width: 500px;
   margin: 0 auto;
+}
+
+.create__input {
+  min-width: 0;
+}
+
+.create__button {
+  flex-shrink: 0;
 }
 
 .create__input {
